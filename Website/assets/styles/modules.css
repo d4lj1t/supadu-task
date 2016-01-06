@@ -1,0 +1,43 @@
+/********** START MODULES **********/
+/*image wrapper*/
+.image-wrapper {
+  overflow: hidden;
+}
+.image-wrapper img {
+  display: block;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: scale(1);
+  max-width: 100%;
+}
+.image-wrapper:hover img {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/*BOXES*/
+.boxes-container {
+  margin: 20px -10px 40px -10px;
+}
+.box-item .image-wrapper img {
+  width: 100%;
+}
+/*GLOBAL ENTRIES*/
+.entry {
+  margin: 0 0 20px 0;
+}
+.entry {
+  padding: 0;
+}
+.entry .image-wrapper {
+  float: left;
+  margin-right: 20px;
+}
+.entry .image-wrapper img {
+  display: block;
+}
+/********** END MODULES **********/
