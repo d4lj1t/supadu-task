@@ -1,14 +1,14 @@
 ﻿function bindClickEvents() {
 
-    $(".js-thumb-up").click(function (e) {
-        item = $(this).parent().find(".js-item").val()
+    $(".js-thumb-up").click(function () {
+        item = $(this).parent().find(".js-item").val();
         if (item >= 0 && item < 10) {
             $(this).parent().find(".js-item").val(+item + 1)
         }
     });
 
     $(".js-thumb-down").click(function () {
-        item = $(this).parent().find(".js-item").val()
+        item = $(this).parent().find(".js-item").val();
         if (item > 0 && item <= 10) {
             $(this).parent().find(".js-item").val(+item - 1)
         }
