@@ -301,11 +301,20 @@
 .color-green {
   color: #329922;
 }
-.background-pink {
+.bkgrnd-pink {
   background-color: #e10098;
 }
-.background-white {
+.bkgrnd-white {
   background-color: #FFF;
+}
+.bkgrnd-light-grey {
+  background-color: #e2e9ed;
+}
+.bkgrnd-purple {
+  background-color: #7a3052;
+}
+.bkgrnd-black {
+  background-color: black;
 }
 .vcenter {
   display: inline-block;
