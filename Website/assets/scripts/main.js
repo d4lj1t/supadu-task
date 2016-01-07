@@ -1,14 +1,14 @@
 ﻿function bindClickEvents() {
 
     $(".js-thumb-up").click(function () {
-        if ($(this).parent().find(".js-thumb-val").val() >= 0 && $(this).parent().find(".js-thumb-val").val() < 10) {
-            $(this).parent().find(".js-thumb-val").val(+$(this).parent().find(".js-thumb-val").val() + 1)
+        if ($(this).parent().find(".js-item").val() >= 0 && $(this).parent().find(".js-item").val() < 10) {
+            $(this).parent().find(".js-item").val(+$(this).parent().find(".js-item").val() + 1)
         }
     });
 
     $(".js-thumb-down").click(function () {
-        if ($(this).parent().find(".js-thumb-val").val() > 0 && $(this).parent().find(".js-thumb-val").val() <= 10) {
-            $(this).parent().find(".js-thumb-val").val(+$(this).parent().find(".js-thumb-val").val() - 1)
+        if ($(this).parent().find(".js-item").val() > 0 && $(this).parent().find(".js-item").val() <= 10) {
+            $(this).parent().find(".js-item").val(+$(this).parent().find(".js-item").val() - 1)
         }
     });
 
@@ -17,7 +17,7 @@
      var View = {
      thumbUp: $('.js-thumb-up'),
      thumbDown: $('.js-thumb-down'),
-     item: $('.js-thumb-val')
+     item: $('.js-item')
      };
 
      View.thumbUpClick = function (button) {
