@@ -1,14 +1,16 @@
 ﻿function bindClickEvents() {
 
-    $(".js-thumb-up").click(function () {
-        if ($(this).parent().find(".js-item").val() >= 0 && $(this).parent().find(".js-item").val() < 10) {
-            $(this).parent().find(".js-item").val(+$(this).parent().find(".js-item").val() + 1)
+    $(".js-thumb-up").click(function (e) {
+        item = $(this).parent().find(".js-item").val()
+        if (item >= 0 && item < 10) {
+            $(this).parent().find(".js-item").val(+item + 1)
         }
     });
 
     $(".js-thumb-down").click(function () {
-        if ($(this).parent().find(".js-item").val() > 0 && $(this).parent().find(".js-item").val() <= 10) {
-            $(this).parent().find(".js-item").val(+$(this).parent().find(".js-item").val() - 1)
+        item = $(this).parent().find(".js-item").val()
+        if (item > 0 && item <= 10) {
+            $(this).parent().find(".js-item").val(+item - 1)
         }
     });
 
