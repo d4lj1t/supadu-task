@@ -8,6 +8,15 @@
   .main-nav ul li.main-nav-item a.main-nav-link {
     padding: 5px 30px;
   }
+  .left-content-block {
+    width: 190px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .thumb-container {
+    max-width: 190px;
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 1250px) {
   .global-container {
@@ -35,6 +44,9 @@
   .entry .image-wrapper {
     margin-bottom: 20px;
   }
+  .left-content-block {
+    width: 190px;
+  }
 }
 @media only screen and (max-width: 900px) {
   .banner-wrapper {
@@ -51,6 +63,9 @@
   }
   .main-nav ul li.main-nav-item a.main-nav-link {
     padding: 5px 8px;
+  }
+  .left-content-block.inline-block {
+    display: none;
   }
 }
 @media (max-width: 768px) {
