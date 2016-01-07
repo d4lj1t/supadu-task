@@ -14,7 +14,7 @@
         }
     });
 
-    /*    var Model ={};
+    /*    var Model = {};
 
      var View = {
      thumbUp: $('.js-thumb-up'),
@@ -23,22 +23,21 @@
      };
 
      View.thumbUpClick = function (button) {
-     if ( $(button).parent().find(View.item).val() > 0 && $(button).parent().find(View.item).val() < 10  ) {
-
-     $(button).parent().find(View.item).val(+$(button).parent().find(View.item).val() + 1);
-
+     item = $(button).parent().find(View.item).val()
+     if (item > 0 && item < 10) {
+     $(button).parent().find(View.item).val(+item + 1);
      }
      };
 
      var Controller = {};
 
-     Controller.bindThumbEvents = function() {
-     View.thumbUp.click(function() {
+     Controller.bindThumbEvents = function () {
+     View.thumbUp.click(function () {
      View.thumbUpClick(this);
      })
      };
 
-     Controller.loadView = function() {
+     Controller.loadView = function () {
      Controller.bindThumbEvents();
      };
 
