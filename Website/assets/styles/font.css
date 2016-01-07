@@ -121,3 +121,6 @@ p {
   font-size: 94px;
   line-height: 100px;
 }
+.smallest {
+  font-size: 12px;
+}

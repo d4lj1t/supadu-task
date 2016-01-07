@@ -67,6 +67,9 @@
   .left-content-block.inline-block {
     display: none;
   }
+  .mob-tab-none {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .social-icon {
